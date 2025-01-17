@@ -1,0 +1,55 @@
+@import "../partials/variables";
+
+.link {
+  display: inline-block;
+  background-color: $color1;
+  color: #fff;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.2s ease;
+  text-decoration: none;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: $color5;
+  }
+
+  &--update {
+    background-color: $color2;
+  }
+  &--delete {
+    background-color: $color4;
+    &:hover {
+      animation: vibrate-multi 0.5s ease infinite;
+    }
+    @keyframes vibrate-multi {
+      0% {
+        transform: translate(0, 0);
+      }
+      25% {
+        transform: translate(-1px, 1px);
+      }
+      50% {
+        transform: translate(1px, -1px);
+      }
+      75% {
+        transform: translate(-1px, -1px);
+      }
+      100% {
+        transform: translate(1px, 1px);
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  text-decoration-style: none;
+  &:visited {
+    color: inherit;
+  }
+}

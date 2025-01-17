@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+
+<body>
+    <main class="main-one-piece">
+        <a href="index.php?action=read">Retournez au menu principale</a>
+        <div class="piece-container-only">
+            <div class="piece-container-left">
+                <div class="cover-img" style="background-image: url(../../../img/jjk-manga-wp.webp);"></div>
+                <div class="see-more"><a href="">En savoir plus sur l'oeuvre</a></div>
+            </div>
+
+            <div class="piece-only piece-container-right" data-url="">
+                <div>
+                    <h3>JJK</h3>
+                </div>
+                <div>
+                    <p>Type: Manga</p>
+                </div>
+                <div>
+                    <p>Genre: Shonen</p>
+                </div>
+                <div>
+                    <p>Note: 9/10</p>
+                </div>
+                <div>
+                    <p>Auteur: Chepa</p>
+                </div>
+                <div>
+                    <p>Description: Lorem ipsum dolor sit amet consectetur adi.</p>
+                </div>
+
+                <div>
+                    <a href="index.php?action=updatePiece&id=<?= urlencode($piece->getId()) ?>">Modifier</a>
+                    <a href="index.php?action=deletePiece&id=<?= urlencode($piece->getId()) ?>">Supprimer</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

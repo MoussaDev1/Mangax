@@ -1,0 +1,74 @@
+/* Container styles */
+.carousel {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Track styles */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+/* Items styles */
+.carousel-item {
+  min-width: 100%; /* Occupy full width of the carousel */
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Optional: Add navigation buttons */
+.carousel::before,
+.carousel::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.carousel::before {
+  left: 10px;
+  background-image: url("prev-icon.svg");
+  background-size: cover;
+}
+
+.carousel::after {
+  right: 10px;
+  background-image: url("next-icon.svg");
+  background-size: cover;
+}
+
+/* For autoplay with CSS animations */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.carousel-track {
+  animation: slide 10s infinite;
+}
