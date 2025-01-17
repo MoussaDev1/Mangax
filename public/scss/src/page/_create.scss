@@ -1,0 +1,48 @@
+.main-create {
+  display: flex;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    .form-element {
+      font-size: 3rem;
+
+      button {
+        margin: 0 auto;
+      }
+
+      select {
+        appearance: none;
+        font-size: 1rem;
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+      }
+
+      textarea {
+        margin-top: 20px;
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        resize: none;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .show {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+  }
+}
