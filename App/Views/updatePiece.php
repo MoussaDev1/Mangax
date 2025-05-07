@@ -37,11 +37,6 @@
                 </div>
 
                 <div>
-                    <label for="cover">Couverture (ancienne ou nouvelle): </label>
-                    <input type="file" name="cover" id="cover" autocomplete="off">
-                </div>
-
-                <div>
                     <label for="rating">Note :</label>
                     <input type="number" step="0.1" name="rating" id="rating" autocomplete="off" value="<?= htmlspecialchars($piece->getRating()) ?>">
                 </div>
