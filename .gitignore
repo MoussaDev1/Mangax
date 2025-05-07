@@ -1,2 +1,2 @@
 .env
-Lib/database.php
+Mangax/App/Lib/DatabaseSingleton.php
