@@ -9,7 +9,6 @@ use PDO;
 
 class PiecesDAO
 {
-    private PDO $pdo;
     private PiecesDirector $piecesDirector;
 
     public function __construct(PDO $pdo)
