@@ -27,4 +27,17 @@ class PiecesDirector
             ->setAuthor($data['author'])
             ->Create();
     }
+    public function UpdateManga(array $data): Pieces
+    {
+        return $this->builder
+            ->setId((int)$data['id'])
+            ->setType(strtolower($data['type']))
+            ->setTitle($data['title'])
+            ->setGenre($data['genre'])
+            ->setCover($data['cover'])
+            ->setRating((float)$data['rating'])
+            ->setDescription($data['description'])
+            ->setAuthor($data['author'])
+            ->Create();
+    }
 }

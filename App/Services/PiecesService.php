@@ -42,7 +42,7 @@ class PiecesService
 
     public function UpdatePiece(array $postdata)
     {
-        $pieces = $this->piecesDirector->CreateManga($postdata);
+        $pieces = $this->piecesDirector->UpdateManga($postdata);
 
         $this->piecesDAO->UpdatePiece($pieces);
     }

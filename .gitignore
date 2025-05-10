@@ -1,2 +1,14 @@
+#Env and config sensible files
 .env
 App/Lib/DatabaseSingleton.php
+
+
+
+#Upload files, cache, logs, and other temporary files
+uploads/
+
+#Composer, node_modules, and other dependencies
+vendor/
+
+#Ide, os
+.vscode/
