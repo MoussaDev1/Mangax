@@ -25,9 +25,6 @@ Une application de stockage de manga et anime dans une base donnée MySQL, déve
 
 Cette API permet de créer, lire, mettre à jour et supprimer des œuvres (mangas, animés, etc.).
 
-📄 La documentation complète est disponible ici :  
-👉 [Accéder à la documentation Swagger](http://localhost/Mangax/docs)
-
 ### 🔹 Endpoints principaux
 
 | Méthode | Endpoint            | Description                       |
